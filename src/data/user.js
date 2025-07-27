@@ -16,9 +16,9 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Front-end developer and designer.",
+		title: "MERN Stack Developer",
 		description:
-			"I am a Front-end developer with expertise in React.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+		"I am a MERN Stack Developer skilled in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I focus on developing scalable, efficient, and secure solutions that deliver great user experiences. I enjoy solving real-world problems, writing clean and maintainable code, and continuously improving my technical expertise. Always eager to learn new technologies and take on challenging projects that push my skills further.",
 	},
 
 	about: {
@@ -35,27 +35,27 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Vedic Vision Frontend",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Developed a static website for Vedic Vision using HTML, CSS, and JavaScript. The site includes a clean, responsive layout, intuitive navigation, and basic interactive elements to enhance user experience. Focused on optimizing load speed, maintaining semantic HTML structure, and ensuring cross-device compatibility.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://vikas-agrahari1.github.io/Web_front/",
 		},
 
 		{
-			title: "Project 2",
+			title: "Swiggy Clone",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Built a front-end clone of Swiggy using React.js, Tailwind CSS, and JavaScript. Implemented responsive UI components, image-based menus, and dynamic sections to simulate a real food delivery platform. Focused on maintaining a scalable component structure, clean code practices, and cross-device compatibility.",
+			logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
 			linkText: "View Project",
 			link: "https://swigi-clone-mu.vercel.app/",
 		},
 
 		{
-			title: "Project 3",
+			title: "Quiz Application",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Developed a web-based quiz app using HTML, CSS, and JavaScript. Implemented dynamic question rendering, score calculation, and interactive UI elements. Ensured a responsive layout and smooth user experience across devices.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 			linkText: "View Project",
 			link: "https://vikas-agrahari1.github.io/Quiz_App/",
