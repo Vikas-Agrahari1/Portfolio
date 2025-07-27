@@ -1,0 +1,164 @@
+:root {
+  --designer-primary: #2d3748;       /* Deep slate */
+  --designer-accent: #4c51bf;       /* Royal purple */
+  --designer-light: #f8fafc;        /* Cool white */
+  --designer-border: #e2e8f0;       /* Soft gray */
+  --designer-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --designer-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Logo Container - Designer's Signature Touch */
+.articles-logo-container {
+  position: relative;
+  padding: 2rem 0 0 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.articles-logo {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: var(--designer-shadow);
+  top: 2.5rem;
+  left: 2rem;
+  z-index: 10;
+  background: white;
+  transition: var(--designer-transition);
+  overflow: hidden;
+}
+
+.articles-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: var(--designer-accent);
+}
+
+/* Main Container - Editorial Layout */
+.articles-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 3rem;
+}
+
+/* Article Grid - Magazine Style */
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.articles-wrapper {
+  padding: 2rem 0;
+  display: grid;
+  gap: 3rem;
+}
+
+/* Individual Article - Elegant Card */
+.articles-article {
+  position: relative;
+  padding: 0 0 2rem 2.5rem;
+  border-left: 2px solid var(--designer-border);
+  transition: var(--designer-transition);
+}
+
+.articles-article::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: var(--designer-accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.articles-article:hover {
+  border-left-color: var(--designer-accent);
+}
+
+.articles-article:hover::before {
+  transform: scaleY(1);
+}
+
+/* Typography & Details */
+.articles-title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--designer-primary);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.articles-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--designer-primary);
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .articles-main-container {
+    padding: 5rem 1.5rem 3rem;
+  }
+  
+  .articles-logo {
+    width: 50px;
+    height: 50px;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles-main-container {
+    padding: 4rem 1rem 2rem;
+    grid-template-columns: 1fr;
+  }
+  
+  .articles-logo-container {
+    padding-left: 1rem;
+  }
+  
+  .articles-article {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Micro-interactions */
+@media (hover: hover) {
+  .articles-article:hover {
+    transform: translateX(5px);
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.articles-article {
+  animation: fadeInUp 0.6s both;
+}
+
+.articles-article:nth-child(1) { animation-delay: 0.1s; }
+.articles-article:nth-child(2) { animation-delay: 0.2s; }
+.articles-article:nth-child(3) { animation-delay: 0.3s; }
+.articles-article:nth-child(4) { animation-delay: 0.4s; }
